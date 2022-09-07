@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+  border: none;
+  outline:none;
+  text-decoration: none;
+}
+
+body {
+  max-width: 100%;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px;
+
+  background: rgb(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+}
+
+header .burger {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+
+  background: transparent;
+}
+
+header .burger:hover span {
+  background: #00ffff;
+}
+
+header .burger span {
+  width: 30px;
+  height: 3px;
+  background: #ffffff;
+}
+
+header .burger:focus-within .menu {
+  display: flex;
+}
+
+header .burger .menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:30px;
+
+  width: 100%;
+  height: 100vh;
+
+  position: fixed;
+  top:0;
+  left:0;
+
+  padding: 100px 10%;
+
+  background: radial-gradient(circle at 0% 0%, rgb(0, 67, 122) 0%, rgb(0, 30, 80) 100%);
+
+  cursor: default;
+}
+
+header .burger .menu a {
+  color: #ffffff;
+}
+
+header .burger .menu a.close {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+header .burger .menu a.page-link {
+  font-size: 24px;
+}
+
+header .burger .menu a.page-link:hover {
+  color: #00ffff;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  height: 50px;
+  width: 50px;
+
+  margin-right: 10px;
+}
+
+header span {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 5px;
+}
+
+
+.top {
+  display: flex;
+}
+
+.top img {
+  max-width: 100%;
+}
+
+.your-needs a {
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #0000b3;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 30px;
+}
+.your-needs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.your-needs div {
+  width: 50%;
+
+  padding: 20px 10%;
+
+  background: radial-gradient(circle at 0% 0%, rgb(0, 67, 122) 0%, rgb(0, 30, 80) 100%);
+  font-size: 48px;
+  font-weight: 600;
+  color:#ffffff;
+}
+
+
+.people-need {
+  padding: 100px 20%;
+}
+
+
+.cars-list {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cars-list div {
+  width: 25%;
+  min-height: 100px;
+
+  position: relative;
+
+  padding: 20px;
+}
+
+.cars-list div .bg {
+  width: 100%;
+  height: 55%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cars-list div:nth-child(1) .bg {
+  background-color: rgb(125, 31, 49);
+}
+
+.cars-list div:nth-child(2) .bg {
+  background-color: rgb(217, 99, 27);
+}
+
+.cars-list div:nth-child(3) .bg {
+  background-color: rgb(89, 64, 61);
+}
+
+.cars-list div h3 {
+  position: relative;
+
+  color: #ffffff;
+}
+
+.cars-list div img {
+  width: 100%;
+
+  position: relative;
+}
+
+.cars-list div a {
+  display: block;
+
+  width: 100%;
+
+  position: relative;
+
+  padding: 10px;
+
+  border: 1px solid #333333;
+  border-radius: 30px;
+  text-align: center;
+}
+
+
+.prices {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.prices .list {
+  width: 80%;
+
+  border: 1px solid #333333;
+}
+
+.prices .row {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px;
+
+  border-bottom: 1px solid #333333;
+}
+
+.prices .row:last-child {
+  border-bottom: none;
+}
+
+.prices .row .column {
+}
