@@ -27,6 +27,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
 
   display: flex;
   align-items: center;
@@ -78,6 +79,7 @@ header .burger .menu {
   position: fixed;
   top:0;
   left:0;
+  z-index: 10;
 
   padding: 100px 10%;
 
@@ -180,6 +182,7 @@ header span {
   min-height: 100px;
 
   position: relative;
+  z-index: 1;
 
   padding: 20px;
 }
@@ -191,6 +194,7 @@ header span {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 .cars-list div:nth-child(1) .bg {
@@ -207,6 +211,7 @@ header span {
 
 .cars-list div h3 {
   position: relative;
+  z-index: 3;
 
   color: #ffffff;
 }
@@ -215,6 +220,7 @@ header span {
   width: 100%;
 
   position: relative;
+  z-index: 3;
 }
 
 .cars-list div a {
@@ -223,6 +229,7 @@ header span {
   width: 100%;
 
   position: relative;
+  z-index: 3;
 
   padding: 10px;
 
