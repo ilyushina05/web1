@@ -266,3 +266,18 @@ header span {
 
 .prices .row .column {
 }
+
+
+.yandex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.q {
+
+}
+.column {
+width:15%;
+text-align:center;
+}
