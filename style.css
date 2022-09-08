@@ -288,3 +288,8 @@ header span {
 width:15%;
 text-align:center;
 }
+
+.column.red {
+  background-color: red;
+  
+}
